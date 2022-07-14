@@ -1,0 +1,20 @@
+{
+  "name": "common",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "lidikang",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

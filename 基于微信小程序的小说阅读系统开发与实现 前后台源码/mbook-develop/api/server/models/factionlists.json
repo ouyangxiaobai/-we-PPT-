@@ -1,0 +1,69 @@
+{
+  "name": "factionlists",
+  "plural": "xs_list",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "headerImage": {
+      "type": "string"
+    },
+    "updateTime": {
+      "type": "date"
+    },
+    "author": {
+      "type": "string"
+    },
+    "des": {
+      "type": "string"
+    },
+    "factionName": {
+      "type": "string",
+      "required": true,
+      "default": "未知小说"
+    },
+    "sectionArray": {
+      "type": [
+        "string"
+      ],
+      "required": true,
+      "default": [
+        "[]"
+      ]
+    },
+    "newest": {
+      "type": "number"
+    },
+    "comments": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "contents": {
+      "type": "hasMany",
+      "model": "factioncontents",
+      "foreignKey": "",
+      "through": "factioncontents"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "lidikang",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

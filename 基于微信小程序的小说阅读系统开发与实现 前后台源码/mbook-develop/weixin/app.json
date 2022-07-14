@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/booklist/booklist",
+    "pages/book_detail/reader/reader",
+    "pages/jiaowu/jiaowu",
+    "pages/rank/rank",
+    "pages/jiaowu_detail/jiaowu_detail",
+    "pages/user/user",
+    "pages/login/wxlogin/wxlogin",
+    "pages/login/aslogin/aslogin",
+    "pages/registe/registe",
+    "pages/user/userInfo/userInfo",
+    "pages/book_detail/book_detail",
+    "pages/shop/shop"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FD9941",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#676767",
+    "selectedColor": "#fd9941",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/booklist/booklist",
+      "iconPath": "image/booklist_gray.png",
+      "selectedIconPath": "image/booklist.png",
+      "text": "书架"
+    },{
+      "pagePath": "pages/shop/shop",
+      "iconPath": "image/tuijian_gray.png",
+      "selectedIconPath": "image/tuijian.png",
+      "text": "推荐"
+    }, {
+      "pagePath": "pages/user/user",
+      "iconPath": "image/user_gray.png",
+      "selectedIconPath": "image/user.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,23 @@
+参考这个运行：http://www.wxapp-union.com/thread-3812-1-1.html
+
+运行
+使用wept启动小程序
+npm i wept -g
+cd 微信小程序所在目录
+wept -p 3100
+启动之后直接在浏览器里打开localhost:3100并启用手机调试模式就好了。
+
+启动后台接口
+# 启动mongodb
+mongod --config=E:\mongod_install\mongod.conf
+
+# 启动redis
+redis-server.exe redis.windows.conf
+
+# 启动接口
+cd api
+node .
+
+### 毕业论文说明文档
+
+产品结构图--百度脑图， 地址：http://naotu.baidu.com/file/d5754972cdb61877402cc2ce2b277f26

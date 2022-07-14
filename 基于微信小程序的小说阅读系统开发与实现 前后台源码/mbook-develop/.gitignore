@@ -1,0 +1,38 @@
+# 忽略idea
+.idea
+
+# reptile下的node_modules
+reptile/node_modules/
+
+# api下的node_modules
+api/node_modules/
+
+# ignore config.js
+config.js
+
+# ignore reptile/log/
+reptile/log/
+
+#api/server/datasources.json
+api/server/datasources.json
+reptile/config.js
+
+#忽略vscode的配置目录
+.vscode/
+
+#忽略掉这些很sb的log文件
+log/
+reptile/log/
+
+*.log
+
+# vue项目下的node_modules
+api/client/node_modules
+
+# koa项目的node_modules
+koa/node_modules
+
+# py_spider
+py_reptile/axdzs/axdzs/spiders/__pycache__/
+py_reptile/axdzs/axdzs/__pycache__/
+py_reptile/axdzs/axdzs/download/
